@@ -16,5 +16,20 @@
       "visa_required": false
     }
   ],
-  "interests": []
+  "interests": [
+    {
+      "Name": "Jamaica",
+      "Description": {},
+      "Cost": {},
+      "Review": {},
+      "id": 1
+    },
+    {
+      "Name": "Jamaica",
+      "Description": "Beautiful Waterfalls",
+      "Cost": "$24.00",
+      "Review": "Lovely place for pics",
+      "id": 2
+    }
+  ]
 }
