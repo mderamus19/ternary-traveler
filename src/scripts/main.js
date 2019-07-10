@@ -39,17 +39,18 @@ function poiObj(poiName, poiDescription, poiCost, poiReview) {
     Description: poiDescription,
     Cost: poiCost,
     Review: poiReview
-  };
+};
 }
 // add event listener to save button
 savePoiBtn.addEventListener("click", () => {
-  console.log("click", "She clicked me");
-  let tacoface = document.querySelector("#nameId").value;
-  let poiDescription = document.querySelector("#descriptionId").value;
-  let poiCost = document.querySelector("#costId").value;
-  let poiReview = document.querySelector("#reviewId").value;
-  let addPoi = poiObj(tacoface, poiDescription, poiCost, poiReview);
+    console.log("click", "She clicked me");
+    let poiName = document.querySelector("#nameId").value;
+    let poiDescription = document.querySelector("#descriptionId").value;
+    let poiCost = document.querySelector("#costId").value;
+    let poiReview = document.querySelector("#reviewId").value;
+    let addPoi = poiObj(poiName, poiDescription, poiCost, poiReview);
 
+    console.log(poiObj(poiName, poiDescription, poiCost, poiReview))
   API.addPointsOfInterest(addPoi).then(data => data.json());
 });
 
